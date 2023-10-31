@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Navbar Homework</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .main-header {
+        background-color: black;
+        padding: 25px;
+      }
+
+      .main-header__logo {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 120px);
+      }
+
+      .main-nav__items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .main-nav__item {
+        display: inline-block;
+        margin: 0px 10px;
+        font-size: 20px;
+      }
+
+      .main-nav__item > a::before {
+        content: "\2020";
+      }
+
+      .main-nav__item > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .main-nav__item > a:hover {
+        color: blueviolet;
+      }
+
+      .main-nav__item > a:active {
+        color: darkblue;
+      }
+      main{
+        width: auto;
+        height: 10000px;
+        background-image: url("black-cat-teeth-mouth-eyes-wallpaper-preview.jpg");
+        background-position: center;
+      }
+
+      /* .main-nav__item > a:visited{
+		    color: red;
+	    } */
+    </style>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <a href="" class="main-header__logo">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="#">&#128128 Filmler </a></li>
+          <li class="main-nav__item"><a href="#">&#128128 Diziler</a></li>
+          <li class="main-nav__item main-nav__item--login">
+            <a href="#">&#128128 Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+  </body>
+</html>
